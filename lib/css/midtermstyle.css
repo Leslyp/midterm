@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END CSS RESET */
+
+
+/***************************** style for the nav bar *************************/
+html, body {
+  background-color: #ffe6e6;
+  margin: 0;
+  padding: 0;
+  /* becomes the parent element */
+  position: relative; 
+  width: 100%; 
+  height: 100%;
+ 
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+}
+
+
+ul.nav-bar {  
+  list-style-type: none;
+  background-color: #660033;
+  /* these keep nav on the top of the page, w/o blank space */
+  padding: 0;
+  margin: 0;
+  /* needed to display floated li's */
+  overflow: hidden;
+  font-size: 20px;
+}
+
+/* made links float left to display as horizontal on desktop */
+.nav-bar li a {
+  float: left;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  /* make each of the links have the same height, so my-name and hamburger icon don't mess up hover */
+  height: 25px;
+}
+
+.nav-bar li a:hover {
+  background-color: #ffb3da;
+}
+
+.selected {
+  background-color: #b3005c;
+}
+ 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-content li {
+    display: none;
+    z-index: 1;
+    float: none;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content li {
+    display: block;
+}
+
+/* START HOME PAGE STYLES */
+#addbg section h1, #codeHeader {
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px black;
+  color: #660035;
+  background-color: #ffe6e6; 
+  border: 2px solid #660035;
+}
+
+#addbg {
+  background-image: url("../img/r2hbg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* START CONTACT FORM STYLES*/
+.contact {
+  text-align: center;
+  border: 3px dashed;
+  margin: 5%;
+}
+/* creates space between the labels */
+div {
+  padding: 30px;
+  text-align: center; 
+}
+
+/* makes labels line up in straight line and have same length input box */
+.contact label { 
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* START table STYLES*/
+table {
+  width: 60%;
+  height: 60%;
+  border: 10px solid #660035;
+  margin: 5% auto;
+}
+
+td, th {
+  text-align: left;
+  border: 3px solid;
+  padding: 25px;
+}
+
+th {
+  text-shadow: 2px 2px 2px grey;
+  font-size: 20px;
+}
+
+td {
+  margin-left: 30px;
+}
+
+/* START CODEPEN STYLES */
+
+#challenge li a{
+  text-decoration: none;
+  margin: 20px;
+}
+
+#challenge {
+  list-style-type: square;
+  padding: 50px;
+  text-align: left;
+  font-size: 22px;
+}
+
+#codeHeader {
+  text-align: left;
+  border: none;
+  margin-left: 20px;
+}

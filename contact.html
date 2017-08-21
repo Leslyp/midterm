@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Index Page</title>
+  <link rel="stylesheet" type="text/css" href="./lib/css/midtermstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <script src="lib/js/midterm.js"></script> <!-- add js to html-->
+</head>
+	<body>
+		<header>
+			<nav>
+			  <ul id="myNavBar" class="nav-bar">
+			    <li><a href="index.html">Home</a></li>
+			    <li><a href="contact.html" class="selected">Contact</a></li>
+			    <li><a href="table.html">Table</a></li>
+			    <li><a href="codepen.html">Codepen</a></li>
+			    <li class="dropdown">
+			      <a href="#" >Dropdown</a>
+			      <ul class="dropdown-content">
+			        <li><a href="#">Link1</a></li>
+			        <li><a href="#">Link2</a></li>
+			        <li><a href="#">Link3</a></li>
+			      </ul>
+			    </li> 
+		    </ul>
+			</nav>
+		</header>
+		<!-- create form -->
+		<main class="contact">
+
+			<form id="contactForm" action="#" method="post" onsubmit="return validate()">		<!-- use post so users info is encripted -->
+
+			  <!-- name -->
+			  <div>
+			    <label for="firstname"><span>*</span>First Name:</label>
+			    <input type="text" id="firstname" name="firstname" placeholder="Johnny" />
+			  </div>
+			  <div>
+			    <label for="lastname"><span>*</span>Last Name:</label>
+			    <input type="text" id="lastname" name="lastname" placeholder="Appleseed" />
+			  </div>
+			  <!-- email-->
+		   	<div>
+			    <label for="email"><span>*</span>Email:</label>
+			    <input type="email" id="email" name="email" placeholder="johnny@gmail.com" />
+		   	</div>
+			  <!-- phone-->
+		   	<div>
+			    <label for="phone">Phone:</label>
+			    <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="/^\d{3}-\d{3}-d\{4}$" />
+		   	</div>
+		   	<!-- select dropdown for user color -->
+		   	<div>
+		   		<label for="color">Which color do you prefer?</label>
+		   		<select id="color" name="color">
+					  <option value="red">Red</option>
+					  <option value="orange">Orange</option>
+					  <option value="yellow">Yellow</option>
+					  <option value="green">Green</option>
+					  <option value="blue">Blue</option>
+					  <option value="indigo">Indigo</option>
+					  <option value="violet">Violet</option>
+					</select>
+		   	</div>
+			  <!-- comments/questions-->
+		   	<div id="textarea">
+			    <label for="comments">Comments/Questions:</label>
+			    <textarea rows="6" cols="40" id="comments" name="comments" placeholder="Leave comments/questions here"></textarea>
+		   	</div>
+			  <!-- submit button-->
+		   	<div>
+			  	<input type="submit" name="submit" value="Submit" />
+		   	</div>	   
+			</form> 
+		</main>
+	</body>
+</html>
